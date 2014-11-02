@@ -1,0 +1,24 @@
+﻿<Window x:Name="WindowIB" x:Class="InternetBanking.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="InternetBanking" Height="350" Width="500" ResizeMode="NoResize" Closed="MainWindowClosed">
+    <Grid>
+        <Label Content="Номер карты" HorizontalAlignment="Left" Margin="43,10,0,0" VerticalAlignment="Top" Width="89"/>
+        <ComboBox x:Name="cb1IB" HorizontalAlignment="Left" Margin="43,41,0,0" VerticalAlignment="Top" Width="120" SelectionChanged="cb1_SelectionChanged">
+            <ComboBox.ContextMenu>
+                <ContextMenu/>
+            </ComboBox.ContextMenu>
+        </ComboBox>
+        <Button x:Name="btn1IB" Content="Снять наличные" HorizontalAlignment="Left" Margin="43,225,0,0" VerticalAlignment="Top" Width="105" Click="btn1_Click"/>
+        <TextBox x:Name="tb1IB" HorizontalAlignment="Left" Height="23" Margin="173,224,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <Label x:Name="errLblIB" Content="Internet Banking is avaliable" HorizontalAlignment="Left" Height="27" Margin="52,80,0,0" VerticalAlignment="Top" Width="348"/>
+        <TextBox x:Name="tbPinIB" HorizontalAlignment="Left" Height="23" Margin="303,37,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="56"/>
+        <Label x:Name="lbPinIB" Content="введите PIN" HorizontalAlignment="Left" Margin="227,37,0,0" VerticalAlignment="Top"/>
+        <Button x:Name="btnOkIB" Content="Ok" HorizontalAlignment="Left" Margin="377,38,0,0" VerticalAlignment="Top" Width="41" Click="btnOk_Click"/>
+        <TextBox x:Name="tbCashIB" HorizontalAlignment="Left" Height="23" Margin="109,128,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <Label x:Name="lbOncardIB" Content="На счету " HorizontalAlignment="Left" Margin="43,125,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.492,1.269"/>
+        <Label x:Name="lbUSDIB" Content="USD" HorizontalAlignment="Left" Margin="248,125,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.132,-0.654"/>
+        <Label Content="PIN карты - первые 4 цифры номера" HorizontalAlignment="Left" Margin="148,279,0,0" VerticalAlignment="Top" Width="229"/>
+
+    </Grid>
+</Window>
